@@ -1,3 +1,25 @@
+h1{
+  font-family: "Copperplate", Fantasy;
+  font-weight: bold;
+  margin-left: 30px
+}
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h3{font-family: Arial, Helvetica, sans-serif;
+  margin-left: 55px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+h4{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{font-family: Arial, Helvetica, sans-serif;
+}
 /* The sidebar menu */
 .sidebar {
   height: 100%; /* 100% Full-height */
@@ -6,7 +28,7 @@
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: rgba(128, 215, 241, 0.89); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -17,7 +39,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #0c78cf;
   display: block;
   transition: 0.3s;
 }
@@ -66,6 +88,8 @@
   display: block;
   width: 100%;
   height: auto;
+  background-color: white;
+  margin-left: 200px;
 }
 
 .overlay {
@@ -79,8 +103,12 @@
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
+  margin-left: 200px;
 }
 
+.link_text{
+  margin-top: 80px
+}
 .text {
   color: white;
   font-size: 20px;
@@ -97,6 +125,10 @@
   box-sizing: border-box;
 }
 
+.header{
+  background-color: #008CBA;
+}
+
 .bg-image {
   /* Full height */
   height: 50%;
@@ -107,33 +139,25 @@
   background-size: cover;
 }
 
-/* Images used */
-.img1 { background-image: url("img_snow.jpg"); }
-.img2 { background-image: url("img_girl.jpg"); }
-.img3 { background-image: url("img_lights.jpg"); }
-
-/* Position text in the middle of the page/image */
 .bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgb(0,0,0);
+  background-color: rgba(218, 43, 43, 0.4);
   color: white;
   font-weight: bold;
   font-size: 80px;
   border: 10px solid #f1f1f1;
-  position: fixed; /* Stay fixed */
-  top: 100px;
+  position: fixed;
+  top: 300px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 300px;
+  width: 500px;
   padding: 20px;
   text-align: center;
 }
-
-.first_row{
-  padding-top: 200px; 
-}
-
+.bg-text a {
+  text-decoration: none;
+  color:white}
 
 .row::after {
   content: "";
@@ -147,52 +171,27 @@
 }
 
 .aside {
-  background-color: #33b5e5;
+  /* background-color: white; */
   padding: 15px;
   color: #ffffff;
   text-align: center;
   font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
 }
 
-.container {
+.formContainer {
   position: relative;
   width: 50%;
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+.container{
+  position: relative;
+  text-align: center;
+  width: 50%;
 }
 
 .container:hover .overlay {
   opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 /* For mobile phones: */
@@ -205,6 +204,14 @@
   .col-s-9 {width: 50%;}
 }
 
+
+.productinfo{width:40%;
+float: left;
+}
+.productpic{width:60%;
+float: left;
+}
+
 #myBtn {
   display: none;
   position: fixed;
@@ -214,7 +221,7 @@
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: rgb(21, 206, 51);
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -224,3 +231,104 @@
 #myBtn:hover {
   background-color: #555;
 }
+
+/* FORM below */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid rgb(76, 170, 233); /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgb(59, 209, 154);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #2bf019;
+}
+
+/* Add a background color and some padding around the form */
+.formContainer {
+  border-radius: 5px;
+  background-color: #4aade6;
+  padding: 20px;
+  margin:0 auto;
+  display: block;
+}
+
+#subscribe{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+/* #form{
+  text-align: center;
+} */
+
+
+.about{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+  margin:0 auto;
+  display: block;
+}
+
+.info{
+  margin-left: 40px;
+  width: 80%
+}
+
+.abouttext{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.BottonBar{
+  background-color: #4aade6;
+}
+
+.productName{
+  margin-left: 150px;
+  color: black;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color:white}
+
+.pagemargin{
+ margin-left: 100px
+}
+
+.button {
+  background-color: #4aade6; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 30px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.OrderButton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);

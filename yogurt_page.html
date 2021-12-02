@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HA!SODA</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="main_page.html" target="_self">HOME</a>
+        <a href="#product">PRODUCTS</a>
+        <a href="#about">ABOUT</a>
+        <a href="#form">FORM</a>
+      </div>
+      <span id = "demo" style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+    </div>
+    <div class="productinfo">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div class="pagemargin">
+      <h1>EXTRA YOGURT</h1>
+      <h2>6-PACK</h2>
+      <p class="info">HA! SODA is a personally created soda brand. Each taste of soda has a unique character design. Use simple geometric figures to form new patterns by overlapping, combining, and rotating, and then combine bright colors to rejuvenate the products. Red cans are a traditional Kung Fu figure; Blue cans are a white collar figure; Green cans are a hula skirt beauty in Hawaii.</p>
+      <br/>
+      <br/>
+      <h1 style="color:red;">$ 16.88</h1>
+      <button class="button OrderButton">ORDER</button>
+    </div>
+    </div>
+    <div class="productpic">
+      <img src="images/yogurt_can.png" style="width:80%">
+    </div>
+    
+    <br/>
+    <br/>
+      <div id="form">
+        <h2 id="subscribe">SUBSCRIBE</h2>
+          <div class="formContainer">
+              <form action="action_page.php">
+
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="Phone number">Phone number</label>
+              <select id="number" name="number">
+                <option value="mynumber">5037059926</option>
+                <option value="dadnumber">5045056877</option>
+                <option value="mumnumber">8188182966</option>
+              </select>
+              <label for="Address">Address</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+              <input type="submit" value="Submit">
+
+            </form>
+          </div>
+      </div>
+      
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>              
+    <div class="BottonBar">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <h2>GIFT CARDs</h2>
+      <h2>ABOUT</h2>
+      <h2>FAQ</h2>
+      <h2>CONTACT</h2>
+      <h2>JOIN US</h2>
+      <br/>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
